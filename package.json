@@ -3,6 +3,7 @@
 	"version": "0.1.0",
 	"private": true,
 	"scripts": {
+		"prepare": "husky",
 		"check-types": "tsc --noemit",
 		"run-eslint": "eslint . --ext .js,.jsx,.ts,.tsx",
 		"next-lint": "next lint . --ext .js,.jsx,.ts,.tsx",
