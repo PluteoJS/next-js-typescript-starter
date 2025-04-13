@@ -1,13 +1,6 @@
 import {AxiosInstance} from "axios";
 
-/**
- * NOTE: Currently we're not using redux in this project.
- * The type of this will be changed to the proper
- * redux store type once we start using redux.
- */
-// import type {StoreType} from "@store/index";
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-type StoreType = any;
+import type {StoreType} from "@store/index";
 
 /**
  * Mapping all the responseInterceptors defined as closures inside this function
@@ -40,7 +33,6 @@ function AxiosResponseInterceptors(
 	 * apiServer.
 	 */
 	Object.values(axiosResponseInterceptors).forEach(
-		// eslint-disable-next-line @typescript-eslint/no-explicit-any
 		(responseInterceptor: any) => {
 			apiServer.interceptors.response.use(
 				responseInterceptor.onFulfilled,

@@ -44,21 +44,4 @@ export const injectStore = (store: StoreType): void => {
 	JSONNubesServerAxiosResponseInterceptors(store, apiServer);
 };
 
-const registerInterceptors = (): void => {
-	// registering common axios response interceptors
-	AxiosResponseInterceptors(null, apiServer);
-
-	// registering axios request interceptors specific to JSONSiloServer
-	JSONNubesServerAxiosRequestInterceptors(null, apiServer);
-
-	// registering axios response interceptors specific to JSONSiloServer
-	JSONNubesServerAxiosResponseInterceptors(null, apiServer);
-};
-
-/**
- * When using redux, this has to be removed and the injectStore function
- * has to be used to inject the redux store.
- */
-registerInterceptors();
-
 export {apiServer};

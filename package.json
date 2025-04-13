@@ -27,10 +27,13 @@
 		}
 	},
 	"dependencies": {
+		"@reduxjs/toolkit": "^2.6.1",
 		"axios": "^1.8.4",
 		"next": "15.3.0",
 		"react": "^19.0.0",
 		"react-dom": "^19.0.0",
+		"react-redux": "^9.2.0",
+		"redux-logger": "^3.0.6",
 		"uuid": "^11.1.0"
 	},
 	"devDependencies": {
@@ -43,6 +46,7 @@
 		"@types/node": "^20",
 		"@types/react": "^19",
 		"@types/react-dom": "^19",
+		"@types/redux-logger": "^3",
 		"@types/semver": "^7.7.0",
 		"conventional-recommended-bump": "6.1.0",
 		"eslint": "^9",

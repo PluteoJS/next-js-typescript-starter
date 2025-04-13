@@ -1,15 +1,8 @@
 import {AxiosInstance} from "axios";
 
+import type {StoreType} from "@store/index";
+
 import type {InternalAxiosRequestConfig} from "axios";
-
-/**
- * NOTE: Currently we're not using redux in this project.
- * The type of this will be changed to the proper
- * redux store type once we start using redux.
- */
-// import type {StoreType} from "@store/index";
-
-type StoreType = any;
 
 /**
  * Mapping all the requestInterceptors defined as closures inside this function
