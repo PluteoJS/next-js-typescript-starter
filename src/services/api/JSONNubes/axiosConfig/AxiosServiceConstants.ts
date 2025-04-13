@@ -1,21 +1,19 @@
 import {AxiosRequestConfig} from "axios";
 
-import config from "@/config";
-
 /**
  * The base url of the api server's endpoint needs to be configured here.
  *
  * NOTE: This has to be manged by a build flavour configuration files
  * such as environment fils or via a remote configuration manger.
  */
-const API_SERVER_BASE_URL = config.JSONSiloAPI.BASE_URL;
+const API_SERVER_BASE_URL = ""; // TODO: Add the base URL of the API server here
 /**
  * The request timeout of the api server needs to be configured here.
  *
  * NOTE: This has to be manged by a build flavour configuration files
  * such as environment fils  or via a remote configuration manger.
  */
-const API_SERVER_REQUEST_TIMEOUT = config.JSONSiloAPI.API_TIMEOUT;
+const API_SERVER_REQUEST_TIMEOUT = 2000; // TODO: Add the request timeout of the API server here
 
 /**
  * All basic axios request-configurations needs to be set here.
