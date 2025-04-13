@@ -2,6 +2,7 @@
 	"name": "jsonnubes-dashboard",
 	"version": "0.1.0",
 	"private": true,
+	"packageManager": "yarn@4.7.0",
 	"scripts": {
 		"prepare": "husky",
 		"check-types": "tsc --noemit",
