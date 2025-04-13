@@ -30,7 +30,8 @@
 		"axios": "^1.8.4",
 		"next": "15.3.0",
 		"react": "^19.0.0",
-		"react-dom": "^19.0.0"
+		"react-dom": "^19.0.0",
+		"uuid": "^11.1.0"
 	},
 	"devDependencies": {
 		"@commitlint/cli": "^19.8.0",
