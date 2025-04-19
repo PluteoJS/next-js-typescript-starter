@@ -1,5 +1,4 @@
 import {NullableNumber, NullableString} from "@/customTypes/CommonTypes";
-
 import {iGenericResponse} from "@/customTypes/CommonServiceTypes";
 
 type APIResponseMessageType = NullableString;

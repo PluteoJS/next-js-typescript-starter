@@ -1,5 +1,4 @@
 import {APIResponse, httpStatusCodes} from "@/customTypes/NetworkTypes";
-
 import {iGenericResponse} from "@/customTypes/CommonServiceTypes";
 
 /**
