@@ -1,0 +1,51 @@
+{
+	"compilerOptions": {
+		"target": "ES2017",
+		"lib": ["dom", "dom.iterable", "esnext"],
+		"allowJs": true,
+		"skipLibCheck": true,
+		"strict": true,
+		"noEmit": true,
+		"esModuleInterop": true,
+		"module": "esnext",
+		"moduleResolution": "bundler",
+		"resolveJsonModule": true,
+		"isolatedModules": true,
+		"jsx": "preserve",
+		"incremental": true,
+		"plugins": [
+			{
+				"name": "next"
+			}
+		],
+		"paths": {
+			"@/*": ["./src/*"],
+			"@assets/*": ["./src/assets/*"],
+			"@components/*": ["./src/components/*"],
+			"@config/*": ["./src/config/*"],
+			"@constants/*": ["./src/constants/*"],
+			"@customTypes/*": ["./src/customTypes/*"],
+			"@data/*": ["./src/data/*"],
+			"@services/*": ["./src/services/*"],
+			"@store/*": ["./src/store/*"],
+			"@styles/*": ["./src/styles/*"],
+			"@utils/*": ["./src/utils/*"]
+		}
+	},
+	"include": [
+		"next-env.d.ts",
+		"**/*.ts",
+		"**/*.tsx",
+		".next/types/**/*.ts",
+		".prettierrc.js",
+		"./.standard-version/**/*.ts",
+		"postcss.config.js",
+		"tailwind.config.js"
+	],
+	"exclude": [
+		"node_modules",
+		"next.config.js",
+		"ecosystem-staging.config.js",
+		"ecosystem-production.config.js"
+	]
+}
