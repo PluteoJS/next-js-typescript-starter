@@ -12,6 +12,7 @@ import globals from "globals";
 export default defineConfig([
 	globalIgnores([
 		"**/next.config.js",
+		"**/next-env.d.ts",
 		"**/lottie/*.json",
 		"**/*.svg",
 		"**/build/*",
