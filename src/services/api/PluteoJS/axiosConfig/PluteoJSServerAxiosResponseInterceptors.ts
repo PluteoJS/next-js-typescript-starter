@@ -14,7 +14,7 @@ import {httpStatusCodes} from "@/customTypes/NetworkTypes";
  * @param store
  * @param apiServer
  */
-function JSONNubesServerAxiosResponseInterceptors(
+function PluteoJSServerAxiosResponseInterceptors(
 	store: StoreType | null,
 	apiServer: AxiosInstance,
 ): void {
@@ -92,4 +92,4 @@ function JSONNubesServerAxiosResponseInterceptors(
 	);
 }
 
-export default JSONNubesServerAxiosResponseInterceptors;
+export default PluteoJSServerAxiosResponseInterceptors;

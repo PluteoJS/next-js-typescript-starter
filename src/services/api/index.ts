@@ -1,6 +1,6 @@
 import type {StoreType} from "@store/index";
 
-import {injectStore as JSONNubesInjectStore} from "@services/api/JSONNubes";
+import {injectStore as PluteoJSInjectStore} from "@services/api/PluteoJS";
 
 /**
  * Injects redux-store to the local variable reduxStore which gets used
@@ -13,5 +13,5 @@ import {injectStore as JSONNubesInjectStore} from "@services/api/JSONNubes";
  */
 
 export const injectStore = (store: StoreType): void => {
-	JSONNubesInjectStore(store);
+	PluteoJSInjectStore(store);
 };
