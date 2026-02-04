@@ -1,8 +1,13 @@
 {
-	"name": "jsonnubes-dashboard",
-	"version": "0.1.0",
+	"name": "pluteojs-nextjs-starter",
+	"version": "0.0.0",
 	"private": true,
 	"packageManager": "yarn@4.7.0",
+	"template": {
+		"name": "PluteoJS Next.js Starter",
+		"version": "1.0.0",
+		"repository": "https://github.com/PluteoJS/next-js-typescript-starter"
+	},
 	"scripts": {
 		"prepare": "husky",
 		"check-types": "tsc --noemit",
