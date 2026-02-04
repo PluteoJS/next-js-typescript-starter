@@ -20,8 +20,9 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-	title: "JSONNubes",
-	description: "A Robust Cloud for JSON",
+	title: "PluteoJS Next.js Starter",
+	description:
+		"A production-ready Next.js TypeScript starter template by PluteoJS",
 	manifest: "/site.webmanifest",
 	icons: {
 		icon: "/favicon.ico",
