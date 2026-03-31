@@ -10,8 +10,8 @@ import axios from "axios";
 type StoreType = any;
 
 import AxiosResponseInterceptors from "@/services/api/commonInterceptors/AxiosResponseInterceptors";
-import JSONNubesServerAxiosRequestInterceptors from "@/services/api/JSONNubes/axiosConfig/JSONNubesServerAxiosRequestInterceptors";
-import JSONNubesServerAxiosResponseInterceptors from "@/services/api/JSONNubes/axiosConfig/JSONNubesServerAxiosResponseInterceptors";
+import PluteoJSServerAxiosRequestInterceptors from "@/services/api/PluteoJS/axiosConfig/PluteoJSServerAxiosRequestInterceptors";
+import PluteoJSServerAxiosResponseInterceptors from "@/services/api/PluteoJS/axiosConfig/PluteoJSServerAxiosResponseInterceptors";
 
 import {axiosRequestConfig} from "./AxiosServiceConstants";
 
@@ -37,11 +37,11 @@ export const injectStore = (store: StoreType): void => {
 	// registering common axios response interceptors
 	AxiosResponseInterceptors(store, apiServer);
 
-	// registering axios request interceptors specific to JSONSiloServer
-	JSONNubesServerAxiosRequestInterceptors(store, apiServer);
+	// registering axios request interceptors specific to PluteoJS Server
+	PluteoJSServerAxiosRequestInterceptors(store, apiServer);
 
-	// registering axios response interceptors specific to JSONSiloServer
-	JSONNubesServerAxiosResponseInterceptors(store, apiServer);
+	// registering axios response interceptors specific to PluteoJS Server
+	PluteoJSServerAxiosResponseInterceptors(store, apiServer);
 };
 
 export {apiServer};
